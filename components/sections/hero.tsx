@@ -3,6 +3,7 @@
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const HeroCanvas = dynamic(
   () => import("@/components/visual/hero-canvas").then((m) => m.HeroCanvas),
@@ -50,15 +51,17 @@ export function Hero() {
           <Button
             size="lg"
             className="w-full sm:w-auto h-14 px-10 rounded-full text-base font-bold bg-zinc-900 text-white hover:scale-105 active:scale-95 transition-all shadow-xl shadow-zinc-900/10"
+            asChild
           >
-            Join Early Access
+            <Link href="https://app-mifa-dynamics.vercel.app/sign-up" target="_blank" rel="noopener noreferrer">Join Early Access</Link>
           </Button>
           <Button
             size="lg"
             variant="outline"
             className="w-full sm:w-auto h-14 px-10 rounded-full text-base font-bold border-zinc-200 hover:bg-zinc-50 hover:scale-105 active:scale-95 transition-all"
+            asChild
           >
-            View Expert Demo
+            <Link href="https://app-mifa-dynamics.vercel.app" target="_blank" rel="noopener noreferrer">View Expert Demo</Link>
           </Button>
         </div>
 

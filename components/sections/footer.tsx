@@ -16,10 +16,10 @@ const footerLinks = [
   {
     title: "Resources",
     links: [
-      { label: "Expert Case Studies", href: "#" },
-      { label: "Technical Papers", href: "#" },
-      { label: "Documentation", href: "#" },
-      { label: "API Reference", href: "#" },
+      { label: "Expert Case Studies", href: "https://app-mifa-dynamics.vercel.app" },
+      { label: "Technical Papers", href: "https://app-mifa-dynamics.vercel.app" },
+      { label: "Documentation", href: "https://app-mifa-dynamics.vercel.app" },
+      { label: "API Reference", href: "https://app-mifa-dynamics.vercel.app" },
     ],
   },
   {
@@ -94,6 +94,7 @@ export function Footer() {
                       <Link
                         href={link.href}
                         className="text-xs md:text-sm font-semibold text-zinc-500 hover:text-white transition-colors duration-200"
+                        {...(link.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                       >
                         {link.label}
                       </Link>

@@ -76,11 +76,15 @@ export function Navbar() {
             <Button
               variant="ghost"
               className="font-bold text-xs tracking-[0.2em] text-zinc-500 hover:text-zinc-900"
+              asChild
             >
-              LOG IN
+              <Link href="https://app-mifa-dynamics.vercel.app/sign-in" target="_blank" rel="noopener noreferrer">LOG IN</Link>
             </Button>
-            <Button className="rounded-full px-8 h-11 font-extrabold bg-zinc-900 text-white shadow-xl shadow-zinc-900/10 hover:shadow-zinc-900/20 transition-all uppercase tracking-[0.2em] text-xs">
-              Request Access
+            <Button 
+              className="rounded-full px-8 h-11 font-extrabold bg-zinc-900 text-white shadow-xl shadow-zinc-900/10 hover:shadow-zinc-900/20 transition-all uppercase tracking-[0.2em] text-xs"
+              asChild
+            >
+              <Link href="https://app-mifa-dynamics.vercel.app/sign-up" target="_blank" rel="noopener noreferrer">Request Access</Link>
             </Button>
           </div>
 
@@ -112,11 +116,15 @@ export function Navbar() {
                   <Button
                     variant="ghost"
                     className="justify-start px-0 font-bold text-lg text-zinc-500 hover:text-zinc-900 h-auto"
+                    asChild
                   >
-                    LOG IN
+                    <Link href="https://app-mifa-dynamics.vercel.app/sign-in" target="_blank" rel="noopener noreferrer">LOG IN</Link>
                   </Button>
-                  <Button className="rounded-full w-full h-14 font-extrabold bg-zinc-900 text-white transition-all uppercase tracking-widest text-sm mt-4">
-                    Request Access
+                  <Button 
+                    className="rounded-full w-full h-14 font-extrabold bg-zinc-900 text-white transition-all uppercase tracking-widest text-sm mt-4"
+                    asChild
+                  >
+                    <Link href="https://app-mifa-dynamics.vercel.app/sign-up" target="_blank" rel="noopener noreferrer">Request Access</Link>
                   </Button>
                 </div>
               </SheetContent>

@@ -1,5 +1,6 @@
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function FinalCTA() {
   return (
@@ -30,15 +31,17 @@ export function FinalCTA() {
               <Button
                 size="lg"
                 className="w-full sm:w-auto h-14 px-12 rounded-full text-base font-bold bg-indigo-600 text-white hover:scale-105 active:scale-95 transition-all hover:bg-indigo-600/90"
+                asChild
               >
-                Join Early Access
+                <Link href="https://app-mifa-dynamics.vercel.app/sign-up" target="_blank" rel="noopener noreferrer">Join Early Access</Link>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="w-full sm:w-auto h-14 px-12 rounded-full text-base font-bold border-zinc-700 text-black hover:bg-white/5 hover:scale-105 active:scale-95 transition-all hover:text-white"
+                asChild
               >
-                Request API Access
+                <Link href="https://app-mifa-dynamics.vercel.app/sign-up" target="_blank" rel="noopener noreferrer">Request API Access</Link>
               </Button>
             </div>
 

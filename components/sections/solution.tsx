@@ -4,6 +4,7 @@ import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const SimulationCanvas = dynamic(
   () =>
@@ -98,8 +99,8 @@ export function Solution() {
               ))}
             </ul>
 
-            <Button className="w-full sm:w-auto rounded-full px-8 h-12 font-bold shadow-lg shadow-zinc-900/10 hover:shadow-zinc-900/20">
-              Explore Experimental Features
+            <Button className="w-full sm:w-auto rounded-full px-8 h-12 font-bold shadow-lg shadow-zinc-900/10 hover:shadow-zinc-900/20" asChild>
+              <Link href="https://app-mifa-dynamics.vercel.app" target="_blank" rel="noopener noreferrer">Explore Experimental Features</Link>
             </Button>
           </div>
 
